@@ -1,0 +1,726 @@
+<ns0:MD_Metadata xmlns:ns0="http://www.isotc211.org/2005/gmd" xmlns:ns2="http://www.isotc211.org/2005/gco" xmlns:ns3="http://www.isotc211.org/2005/gmx" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:ns5="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd">
+  <ns0:fileIdentifier>
+      <ns2:CharacterString>e9c559d0-1732-11ea-aaef-0800200c9a66</ns2:CharacterString>
+  </ns0:fileIdentifier>
+  <ns0:language>
+      <ns0:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng" />
+  </ns0:language>
+  <ns0:characterSet>
+      <ns0:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+  </ns0:characterSet>
+  <ns0:hierarchyLevel>
+      <ns0:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+  </ns0:hierarchyLevel>
+  <ns0:contact>
+      <ns0:CI_ResponsibleParty>
+         <ns0:organisationName>
+            <ns2:CharacterString>European Environment Agency</ns2:CharacterString>
+         </ns0:organisationName>
+         <ns0:contactInfo>
+            <ns0:CI_Contact>
+               <ns0:address>
+                  <ns0:CI_Address>
+                     <ns0:deliveryPoint>
+                        <ns2:CharacterString>Kongens Nytorv 6</ns2:CharacterString>
+                     </ns0:deliveryPoint>
+                     <ns0:city>
+                        <ns2:CharacterString>Copenhagen</ns2:CharacterString>
+                     </ns0:city>
+                     <ns0:administrativeArea>
+                        <ns2:CharacterString>K</ns2:CharacterString>
+                     </ns0:administrativeArea>
+                     <ns0:postalCode>
+                        <ns2:CharacterString>1050</ns2:CharacterString>
+                     </ns0:postalCode>
+                     <ns0:country>
+                        <ns2:CharacterString>Denmark</ns2:CharacterString>
+                     </ns0:country>
+                     <ns0:electronicMailAddress>
+                        <ns2:CharacterString>sdi@eea.europa.eu</ns2:CharacterString>
+                     </ns0:electronicMailAddress>
+                  </ns0:CI_Address>
+               </ns0:address>
+            </ns0:CI_Contact>
+         </ns0:contactInfo>
+         <ns0:role>
+            <ns0:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+         </ns0:role>
+      </ns0:CI_ResponsibleParty>
+  </ns0:contact>
+  <ns0:dateStamp>
+      <ns2:DateTime>2021-02-25T15:08:00</ns2:DateTime>
+  </ns0:dateStamp>
+  <ns0:metadataStandardName>
+      <ns2:CharacterString>ISO 19115/19139</ns2:CharacterString>
+  </ns0:metadataStandardName>
+  <ns0:metadataStandardVersion>
+      <ns2:CharacterString>1.0</ns2:CharacterString>
+  </ns0:metadataStandardVersion>
+  <ns0:referenceSystemInfo>
+      <ns0:MD_ReferenceSystem>
+         <ns0:referenceSystemIdentifier>
+            <ns0:RS_Identifier>
+               <ns0:code>
+                  <ns3:Anchor ns4:href="http://www.opengis.net/def/crs/EPSG/0/3035">EPSG:3035</ns3:Anchor>
+               </ns0:code>
+            </ns0:RS_Identifier>
+         </ns0:referenceSystemIdentifier>
+      </ns0:MD_ReferenceSystem>
+  </ns0:referenceSystemInfo>
+  <ns0:identificationInfo>
+      <ns0:MD_DataIdentification>
+         <ns0:citation>
+            <ns0:CI_Citation>
+               <ns0:title>
+                  <ns2:CharacterString>Riparian Zones: Land Cover and Land Use Classification within buffer zone of selected rivers of Delivery Unit DU002A St2-9 (vector) for reference years 2012 and 2018 including change mapping - version 03</ns2:CharacterString>
+               </ns0:title>
+               <ns0:date>
+                  <ns0:CI_Date>
+                     <ns0:date>
+                        <ns2:DateTime>2021-02-23T12:11:00</ns2:DateTime>
+                     </ns0:date>
+                     <ns0:dateType>
+                        <ns0:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation" />
+                     </ns0:dateType>
+                  </ns0:CI_Date>
+               </ns0:date>
+               <ns0:edition>
+                  <ns2:CharacterString>01.00</ns2:CharacterString>
+               </ns0:edition>
+               <ns0:identifier>
+                  <ns0:MD_Identifier>
+                     <ns0:code>
+                        <ns2:CharacterString>copernicus_v_3035_10k_m_rz-lclu-2012-2018_p_2010-2019_v03_r00</ns2:CharacterString>
+                     </ns0:code>
+                  </ns0:MD_Identifier>
+               </ns0:identifier>
+            </ns0:CI_Citation>
+         </ns0:citation>
+         <ns0:abstract>
+            <ns2:CharacterString>Land Cover/Land Use (LC/LU) classification as part of the Copernicus Land Monitoring Service (CLMS) Local Component, tailored to the needs of biodiversity monitoring in a variable buffer zone of selected rivers (Strahler levels 2-9 derived from EU-Hydro) for the change layer 2012-2018. LC/LU is extracted from Very High Resolution (VHR) satellite data and other available data in a buffer zone of selected rivers for supporting biodiversity monitoring and mapping and assessment of ecosystems and their services. The class definitions follow the pre-defined nomenclature on the basis of Mapping and Assessment of Ecosystems and their Services (MAES) typology of ecosystems (Level 1 to Level 4) and CORINE Land Cover. The classification provides 55 distinct thematic classes with a Minimum Mapping Unit (MMU) of 0.5 ha and a Minimum Mapping Width (MMW) of 10 m. For further information on the CLMS Local Component please refer to https://land.copernicus.eu/local.</ns2:CharacterString>
+         </ns0:abstract>
+         <ns0:pointOfContact ns2:nilReason="withheld">
+            <ns0:CI_ResponsibleParty>
+               <ns0:organisationName>
+                  <ns2:CharacterString>European Environment Agency</ns2:CharacterString>
+               </ns0:organisationName>
+               <ns0:contactInfo>
+                  <ns0:CI_Contact>
+                     <ns0:address>
+                        <ns0:CI_Address>
+                           <ns0:deliveryPoint>
+                              <ns2:CharacterString>Kongens Nytorv 6</ns2:CharacterString>
+                           </ns0:deliveryPoint>
+                           <ns0:city>
+                              <ns2:CharacterString>Copenhagen</ns2:CharacterString>
+                           </ns0:city>
+                           <ns0:administrativeArea>
+                              <ns2:CharacterString>K</ns2:CharacterString>
+                           </ns0:administrativeArea>
+                           <ns0:postalCode>
+                              <ns2:CharacterString>1050</ns2:CharacterString>
+                           </ns0:postalCode>
+                           <ns0:country>
+                              <ns2:CharacterString>Denmark</ns2:CharacterString>
+                           </ns0:country>
+                           <ns0:electronicMailAddress>
+                              <ns2:CharacterString>copernicus@eea.europa.eu</ns2:CharacterString>
+                           </ns0:electronicMailAddress>
+                        </ns0:CI_Address>
+                     </ns0:address>
+                     <ns0:onlineResource>
+                        <ns0:CI_OnlineResource>
+                           <ns0:linkage>
+                              <ns0:URL>https://land.copernicus.eu</ns0:URL>
+                           </ns0:linkage>
+                           <ns0:protocol>
+                              <ns2:CharacterString>WWW:LINK-1.0-http--link</ns2:CharacterString>
+                           </ns0:protocol>
+                           <ns0:name>
+                              <ns2:CharacterString>Copernicus Land Portal</ns2:CharacterString>
+                           </ns0:name>
+                           <ns0:function>
+                              <ns0:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+                           </ns0:function>
+                        </ns0:CI_OnlineResource>
+                     </ns0:onlineResource>
+                  </ns0:CI_Contact>
+               </ns0:contactInfo>
+               <ns0:role>
+                  <ns0:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor" />
+               </ns0:role>
+            </ns0:CI_ResponsibleParty>
+         </ns0:pointOfContact>
+         <ns0:pointOfContact ns2:nilReason="withheld">
+            <ns0:CI_ResponsibleParty>
+               <ns0:organisationName>
+                  <ns2:CharacterString>European Environment Agency</ns2:CharacterString>
+               </ns0:organisationName>
+               <ns0:contactInfo>
+                  <ns0:CI_Contact>
+                     <ns0:address>
+                        <ns0:CI_Address>
+                           <ns0:deliveryPoint>
+                              <ns2:CharacterString>Kongens Nytorv 6</ns2:CharacterString>
+                           </ns0:deliveryPoint>
+                           <ns0:city>
+                              <ns2:CharacterString>Copenhagen</ns2:CharacterString>
+                           </ns0:city>
+                           <ns0:administrativeArea>
+                              <ns2:CharacterString>K</ns2:CharacterString>
+                           </ns0:administrativeArea>
+                           <ns0:postalCode>
+                              <ns2:CharacterString>1050</ns2:CharacterString>
+                           </ns0:postalCode>
+                           <ns0:country>
+                              <ns2:CharacterString>Denmark</ns2:CharacterString>
+                           </ns0:country>
+                           <ns0:electronicMailAddress>
+                              <ns2:CharacterString>copernicus@eea.europa.eu</ns2:CharacterString>
+                           </ns0:electronicMailAddress>
+                        </ns0:CI_Address>
+                     </ns0:address>
+                     <ns0:onlineResource>
+                        <ns0:CI_OnlineResource>
+                           <ns0:linkage>
+                              <ns0:URL>https://land.copernicus.eu</ns0:URL>
+                           </ns0:linkage>
+                           <ns0:protocol>
+                              <ns2:CharacterString>WWW:LINK-1.0-http--link</ns2:CharacterString>
+                           </ns0:protocol>
+                           <ns0:name>
+                              <ns2:CharacterString>Copernicus Land Portal</ns2:CharacterString>
+                           </ns0:name>
+                           <ns0:function>
+                              <ns0:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+                           </ns0:function>
+                        </ns0:CI_OnlineResource>
+                     </ns0:onlineResource>
+                  </ns0:CI_Contact>
+               </ns0:contactInfo>
+               <ns0:role>
+                  <ns0:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="custodian" />
+               </ns0:role>
+            </ns0:CI_ResponsibleParty>
+         </ns0:pointOfContact>
+         <ns0:pointOfContact ns2:nilReason="withheld">
+            <ns0:CI_ResponsibleParty>
+               <ns0:organisationName>
+                  <ns2:CharacterString>European Environment Agency</ns2:CharacterString>
+               </ns0:organisationName>
+               <ns0:contactInfo>
+                  <ns0:CI_Contact>
+                     <ns0:address>
+                        <ns0:CI_Address>
+                           <ns0:deliveryPoint>
+                              <ns2:CharacterString>Kongens Nytorv 6</ns2:CharacterString>
+                           </ns0:deliveryPoint>
+                           <ns0:city>
+                              <ns2:CharacterString>Copenhagen</ns2:CharacterString>
+                           </ns0:city>
+                           <ns0:administrativeArea>
+                              <ns2:CharacterString>K</ns2:CharacterString>
+                           </ns0:administrativeArea>
+                           <ns0:postalCode>
+                              <ns2:CharacterString>1050</ns2:CharacterString>
+                           </ns0:postalCode>
+                           <ns0:country>
+                              <ns2:CharacterString>Denmark</ns2:CharacterString>
+                           </ns0:country>
+                           <ns0:electronicMailAddress>
+                              <ns2:CharacterString>copernicus@eea.europa.eu</ns2:CharacterString>
+                           </ns0:electronicMailAddress>
+                        </ns0:CI_Address>
+                     </ns0:address>
+                     <ns0:onlineResource>
+                        <ns0:CI_OnlineResource>
+                           <ns0:linkage>
+                              <ns0:URL>https://land.copernicus.eu</ns0:URL>
+                           </ns0:linkage>
+                           <ns0:protocol>
+                              <ns2:CharacterString>WWW:LINK-1.0-http--link</ns2:CharacterString>
+                           </ns0:protocol>
+                           <ns0:name>
+                              <ns2:CharacterString>Copernicus Land Portal</ns2:CharacterString>
+                           </ns0:name>
+                           <ns0:function>
+                              <ns0:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+                           </ns0:function>
+                        </ns0:CI_OnlineResource>
+                     </ns0:onlineResource>
+                  </ns0:CI_Contact>
+               </ns0:contactInfo>
+               <ns0:role>
+                  <ns0:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+               </ns0:role>
+            </ns0:CI_ResponsibleParty>
+         </ns0:pointOfContact>
+         <ns0:pointOfContact ns2:nilReason="withheld">
+            <ns0:CI_ResponsibleParty>
+               <ns0:organisationName>
+                  <ns2:CharacterString>European Union represented by the European Commission - Directorate-General for Defence Industry and Space</ns2:CharacterString>
+               </ns0:organisationName>
+               <ns0:contactInfo>
+                  <ns0:CI_Contact>
+                     <ns0:address>
+                        <ns0:CI_Address>
+                           <ns0:deliveryPoint>
+                              <ns2:CharacterString>Oudergemse laan 45</ns2:CharacterString>
+                           </ns0:deliveryPoint>
+                           <ns0:city>
+                              <ns2:CharacterString>Brussels</ns2:CharacterString>
+                           </ns0:city>
+                           <ns0:postalCode>
+                              <ns2:CharacterString>1040</ns2:CharacterString>
+                           </ns0:postalCode>
+                           <ns0:country>
+                              <ns2:CharacterString>Belgium</ns2:CharacterString>
+                           </ns0:country>
+                           <ns0:electronicMailAddress>
+                              <ns2:CharacterString>DEFIS-C3@ec.europa.eu</ns2:CharacterString>
+                           </ns0:electronicMailAddress>
+                        </ns0:CI_Address>
+                     </ns0:address>
+                     <ns0:onlineResource>
+                        <ns0:CI_OnlineResource>
+                           <ns0:linkage>
+                              <ns0:URL>http://copernicus.eu</ns0:URL>
+                           </ns0:linkage>
+                           <ns0:protocol>
+                              <ns2:CharacterString>WWW:LINK-1.0-http--link</ns2:CharacterString>
+                           </ns0:protocol>
+                           <ns0:name>
+                              <ns2:CharacterString>Website of the Copernicus Programme</ns2:CharacterString>
+                           </ns0:name>
+                           <ns0:function>
+                              <ns0:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+                           </ns0:function>
+                        </ns0:CI_OnlineResource>
+                     </ns0:onlineResource>
+                  </ns0:CI_Contact>
+               </ns0:contactInfo>
+               <ns0:role>
+                  <ns0:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="owner" />
+               </ns0:role>
+            </ns0:CI_ResponsibleParty>
+         </ns0:pointOfContact>
+         <ns0:pointOfContact ns2:nilReason="withheld">
+            <ns0:CI_ResponsibleParty>
+               <ns0:organisationName>
+                  <ns2:CharacterString>e-GEOS S.p.A.</ns2:CharacterString>
+               </ns0:organisationName>
+               <ns0:contactInfo>
+                  <ns0:CI_Contact>
+                     <ns0:address>
+                        <ns0:CI_Address>
+                           <ns0:electronicMailAddress>
+                              <ns2:CharacterString>stefano.brancucci@e-geos.it</ns2:CharacterString>
+                           </ns0:electronicMailAddress>
+                        </ns0:CI_Address>
+                     </ns0:address>
+                  </ns0:CI_Contact>
+               </ns0:contactInfo>
+               <ns0:role>
+                  <ns0:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider" />
+               </ns0:role>
+            </ns0:CI_ResponsibleParty>
+         </ns0:pointOfContact>
+         <ns0:resourceMaintenance>
+            <ns0:MD_MaintenanceInformation>
+               <ns0:maintenanceAndUpdateFrequency>
+                  <ns0:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="continual" />
+               </ns0:maintenanceAndUpdateFrequency>
+            </ns0:MD_MaintenanceInformation>
+         </ns0:resourceMaintenance>
+         <ns0:descriptiveKeywords>
+            <ns0:MD_Keywords>
+               <ns0:keyword>
+                  <ns2:CharacterString>Land cover</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:keyword>
+                  <ns2:CharacterString>Land use</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:type>
+                  <ns0:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+               </ns0:type>
+               <ns0:thesaurusName>
+                  <ns0:CI_Citation>
+                     <ns0:title>
+                        <ns2:CharacterString>GEMET - INSPIRE themes, version 1.0</ns2:CharacterString>
+                     </ns0:title>
+                     <ns0:date>
+                        <ns0:CI_Date>
+                           <ns0:date>
+                              <ns2:Date>2008-06-01</ns2:Date>
+                           </ns0:date>
+                           <ns0:dateType>
+                              <ns0:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                           </ns0:dateType>
+                        </ns0:CI_Date>
+                     </ns0:date>
+                     <ns0:identifier>
+                        <ns0:MD_Identifier>
+                           <ns0:code>
+                              <ns3:Anchor ns4:href="https://sdi.eea.europa.eu/editor-catalogue/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeutheme-theme">geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme</ns3:Anchor>
+                           </ns0:code>
+                        </ns0:MD_Identifier>
+                     </ns0:identifier>
+                  </ns0:CI_Citation>
+               </ns0:thesaurusName>
+            </ns0:MD_Keywords>
+         </ns0:descriptiveKeywords>
+         <ns0:descriptiveKeywords ns2:nilReason="withheld">
+            <ns0:MD_Keywords>
+               <ns0:keyword>
+                  <ns2:CharacterString>Copernicus</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:keyword>
+                  <ns2:CharacterString>Satellite image interpretation</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:keyword>
+                  <ns2:CharacterString>Land monitoring</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:type>
+                  <ns0:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+               </ns0:type>
+               <ns0:thesaurusName>
+                  <ns0:CI_Citation>
+                     <ns0:title>
+                        <ns2:CharacterString>EEA keyword list</ns2:CharacterString>
+                     </ns0:title>
+                     <ns0:date>
+                        <ns0:CI_Date>
+                           <ns0:date>
+                              <ns2:Date>2002-03-01</ns2:Date>
+                           </ns0:date>
+                           <ns0:dateType>
+                              <ns0:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                           </ns0:dateType>
+                        </ns0:CI_Date>
+                     </ns0:date>
+                  </ns0:CI_Citation>
+               </ns0:thesaurusName>
+            </ns0:MD_Keywords>
+         </ns0:descriptiveKeywords>
+         <ns0:descriptiveKeywords>
+            <ns0:MD_Keywords>
+               <ns0:keyword>
+                  <ns2:CharacterString>Europe</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:keyword>
+                  <ns2:CharacterString>EEA39</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:type>
+                  <ns0:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place" />
+               </ns0:type>
+               <ns0:thesaurusName>
+                  <ns0:CI_Citation>
+                     <ns0:title>
+                        <ns2:CharacterString>Continents, countries, sea regions of the world.</ns2:CharacterString>
+                     </ns0:title>
+                     <ns0:date>
+                        <ns0:CI_Date>
+                           <ns0:date>
+                              <ns2:Date>2015-07-17</ns2:Date>
+                           </ns0:date>
+                           <ns0:dateType>
+                              <ns0:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                           </ns0:dateType>
+                        </ns0:CI_Date>
+                     </ns0:date>
+                     <ns0:identifier>
+                        <ns0:MD_Identifier>
+                           <ns0:code>
+                              <ns3:Anchor ns4:href="https://sdi.eea.europa.eu/editor-catalogue/srv/eng/thesaurus.download?ref=external.place.regions">geonetwork.thesaurus.external.place.regions</ns3:Anchor>
+                           </ns0:code>
+                        </ns0:MD_Identifier>
+                     </ns0:identifier>
+                  </ns0:CI_Citation>
+               </ns0:thesaurusName>
+            </ns0:MD_Keywords>
+         </ns0:descriptiveKeywords>
+         <ns0:descriptiveKeywords ns2:nilReason="withheld">
+            <ns0:MD_Keywords>
+               <ns0:keyword>
+                  <ns2:CharacterString>geospatial data</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:type>
+                  <ns0:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+               </ns0:type>
+               <ns0:thesaurusName>
+                  <ns0:CI_Citation>
+                     <ns0:title>
+                        <ns2:CharacterString>EEA categories</ns2:CharacterString>
+                     </ns0:title>
+                     <ns0:date>
+                        <ns0:CI_Date>
+                           <ns0:date>
+                              <ns2:Date>2010-07-06</ns2:Date>
+                           </ns0:date>
+                           <ns0:dateType>
+                              <ns0:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                           </ns0:dateType>
+                        </ns0:CI_Date>
+                     </ns0:date>
+                     <ns0:identifier>
+                        <ns0:MD_Identifier>
+                           <ns0:code>
+                              <ns3:Anchor ns4:href="https://sdi.eea.europa.eu/editor-catalogue/srv/eng/thesaurus.download?ref=local.theme.eea-categories">geonetwork.thesaurus.local.theme.eea-categories</ns3:Anchor>
+                           </ns0:code>
+                        </ns0:MD_Identifier>
+                     </ns0:identifier>
+                  </ns0:CI_Citation>
+               </ns0:thesaurusName>
+            </ns0:MD_Keywords>
+         </ns0:descriptiveKeywords>
+         <ns0:descriptiveKeywords>
+            <ns0:MD_Keywords>
+               <ns0:keyword>
+                  <ns2:CharacterString>sensitive natural area</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:keyword>
+                  <ns2:CharacterString>land use</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:keyword>
+                  <ns2:CharacterString>landscape alteration</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:keyword>
+                  <ns2:CharacterString>landscape</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:keyword>
+                  <ns2:CharacterString>land cover</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:keyword>
+                  <ns2:CharacterString>natural areas, landscape, ecosystems</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:keyword>
+                  <ns2:CharacterString>land</ns2:CharacterString>
+               </ns0:keyword>
+               <ns0:type>
+                  <ns0:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+               </ns0:type>
+               <ns0:thesaurusName>
+                  <ns0:CI_Citation>
+                     <ns0:title>
+                        <ns2:CharacterString>GEMET</ns2:CharacterString>
+                     </ns0:title>
+                     <ns0:date>
+                        <ns0:CI_Date>
+                           <ns0:date>
+                              <ns2:Date>2018-08-16</ns2:Date>
+                           </ns0:date>
+                           <ns0:dateType>
+                              <ns0:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                           </ns0:dateType>
+                        </ns0:CI_Date>
+                     </ns0:date>
+                     <ns0:identifier>
+                        <ns0:MD_Identifier>
+                           <ns0:code>
+                              <ns3:Anchor ns4:href="https://sdi.eea.europa.eu/editor-catalogue/srv/eng/thesaurus.download?ref=external.theme.gemet">geonetwork.thesaurus.external.theme.gemet</ns3:Anchor>
+                           </ns0:code>
+                        </ns0:MD_Identifier>
+                     </ns0:identifier>
+                  </ns0:CI_Citation>
+               </ns0:thesaurusName>
+            </ns0:MD_Keywords>
+         </ns0:descriptiveKeywords>
+         <ns0:descriptiveKeywords>
+            <ns0:MD_Keywords>
+               <ns0:keyword>
+                  <ns3:Anchor ns4:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european">European</ns3:Anchor>
+               </ns0:keyword>
+               <ns0:type>
+                  <ns0:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+               </ns0:type>
+               <ns0:thesaurusName>
+                  <ns0:CI_Citation>
+                     <ns0:title>
+                        <ns3:Anchor ns4:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope">Spatial scope</ns3:Anchor>
+                     </ns0:title>
+                     <ns0:date>
+                        <ns0:CI_Date>
+                           <ns0:date>
+                              <ns2:Date>2019-05-22</ns2:Date>
+                           </ns0:date>
+                           <ns0:dateType>
+                              <ns0:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                           </ns0:dateType>
+                        </ns0:CI_Date>
+                     </ns0:date>
+                     <ns0:identifier>
+                        <ns0:MD_Identifier>
+                           <ns0:code>
+                              <ns3:Anchor ns4:href="https://sdi.eea.europa.eu/editor-catalogue/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope">geonetwork.thesaurus.external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope</ns3:Anchor>
+                           </ns0:code>
+                        </ns0:MD_Identifier>
+                     </ns0:identifier>
+                  </ns0:CI_Citation>
+               </ns0:thesaurusName>
+            </ns0:MD_Keywords>
+         </ns0:descriptiveKeywords>
+         <ns0:resourceConstraints>
+            <ns0:MD_Constraints />
+         </ns0:resourceConstraints>
+         <ns0:resourceConstraints>
+            <ns0:MD_LegalConstraints>
+               <ns0:accessConstraints>
+                  <ns0:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" />
+               </ns0:accessConstraints>
+               <ns0:otherConstraints>
+                  <ns3:Anchor ns4:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">No limitations to public access</ns3:Anchor>
+               </ns0:otherConstraints>
+            </ns0:MD_LegalConstraints>
+         </ns0:resourceConstraints>
+         <ns0:resourceConstraints>
+            <ns0:MD_LegalConstraints>
+               <ns0:useConstraints>
+                  <ns0:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" />
+               </ns0:useConstraints>
+               <ns0:otherConstraints>
+                  <ns2:CharacterString>Access to data is based on a principle of full, open and free access as established by the Copernicus data and information policy Regulation (EU) No 1159/2013 of 12 July 2013. This regulation establishes registration and licensing conditions for GMES/Copernicus users.
+
+Free, full and open access to this data set is made on the conditions that:
+
+1. When distributing or communicating Copernicus dedicated data and Copernicus service information to the public, users shall inform the public of the source of that data and information.
+
+2. Users shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the Union.
+
+3. Where that data or information has been adapted or modified, the user shall clearly state this.
+
+4. The data remain the sole property of the European Union. Any information and data produced in the framework of the action shall be the sole property of the European Union. Any communication and publication by the beneficiary shall acknowledge that the data were produced &#8220;with funding by the European Union&#8221;.</ns2:CharacterString>
+               </ns0:otherConstraints>
+            </ns0:MD_LegalConstraints>
+         </ns0:resourceConstraints>
+         <ns0:spatialRepresentationType>
+            <ns0:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" />
+         </ns0:spatialRepresentationType>
+         <ns0:spatialResolution>
+            <ns0:MD_Resolution>
+               <ns0:equivalentScale>
+                  <ns0:MD_RepresentativeFraction>
+                     <ns0:denominator>
+                        <ns2:Integer>10000</ns2:Integer>
+                     </ns0:denominator>
+                  </ns0:MD_RepresentativeFraction>
+               </ns0:equivalentScale>
+            </ns0:MD_Resolution>
+         </ns0:spatialResolution>
+         <ns0:language>
+            <ns0:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng" />
+         </ns0:language>
+         <ns0:characterSet>
+            <ns0:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+         </ns0:characterSet>
+         <ns0:topicCategory>
+            <ns0:MD_TopicCategoryCode>environment</ns0:MD_TopicCategoryCode>
+         </ns0:topicCategory>
+         <ns0:topicCategory>
+            <ns0:MD_TopicCategoryCode>imageryBaseMapsEarthCover</ns0:MD_TopicCategoryCode>
+         </ns0:topicCategory>
+         <ns0:extent>
+            <ns0:EX_Extent>
+               <ns0:geographicElement>
+                  <ns0:EX_GeographicBoundingBox>
+                     <ns0:westBoundLongitude>
+                        <ns2:Decimal>19.43</ns2:Decimal>
+                     </ns0:westBoundLongitude>
+                     <ns0:eastBoundLongitude>
+                        <ns2:Decimal>26.18</ns2:Decimal>
+                     </ns0:eastBoundLongitude>
+                     <ns0:southBoundLatitude>
+                        <ns2:Decimal>34.68</ns2:Decimal>
+                     </ns0:southBoundLatitude>
+                     <ns0:northBoundLatitude>
+                        <ns2:Decimal>41.44</ns2:Decimal>
+                     </ns0:northBoundLatitude>
+                  </ns0:EX_GeographicBoundingBox>
+               </ns0:geographicElement>
+               <ns0:temporalElement>
+                  <ns0:EX_TemporalExtent>
+                     <ns0:extent>
+                        <ns5:TimePeriod ns5:id="d656822e827a1053982">
+                           <ns5:beginPosition>2011-02-05</ns5:beginPosition>
+                           <ns5:endPosition>2018-09-07</ns5:endPosition>
+                        </ns5:TimePeriod>
+                     </ns0:extent>
+                  </ns0:EX_TemporalExtent>
+               </ns0:temporalElement>
+            </ns0:EX_Extent>
+         </ns0:extent>
+      </ns0:MD_DataIdentification>
+  </ns0:identificationInfo>
+  <ns0:distributionInfo>
+      <ns0:MD_Distribution>
+         <ns0:distributionFormat>
+            <ns0:MD_Format>
+               <ns0:name>
+                  <ns2:CharacterString>SHP</ns2:CharacterString>
+               </ns0:name>
+               <ns0:version ns2:nilReason="unknown">
+                  <ns2:CharacterString />
+               </ns0:version>
+            </ns0:MD_Format>
+         </ns0:distributionFormat>
+      </ns0:MD_Distribution>
+  </ns0:distributionInfo>
+  <ns0:dataQualityInfo>
+      <ns0:DQ_DataQuality>
+         <ns0:scope>
+            <ns0:DQ_Scope>
+               <ns0:level>
+                  <ns0:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+               </ns0:level>
+            </ns0:DQ_Scope>
+         </ns0:scope>
+         <ns0:report>
+            <ns0:DQ_DomainConsistency xsi:type="gmd:DQ_DomainConsistency_Type">
+               <ns0:result />
+            </ns0:DQ_DomainConsistency>
+         </ns0:report>
+         <ns0:report>
+            <ns0:DQ_DomainConsistency>
+               <ns0:result>
+                  <ns0:DQ_ConformanceResult>
+                     <ns0:specification>
+                        <ns0:CI_Citation>
+                           <ns0:title>
+                              <ns2:CharacterString>Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</ns2:CharacterString>
+                           </ns0:title>
+                           <ns0:date>
+                              <ns0:CI_Date>
+                                 <ns0:date>
+                                    <ns2:Date>2010-12-08</ns2:Date>
+                                 </ns0:date>
+                                 <ns0:dateType>
+                                    <ns0:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                                 </ns0:dateType>
+                              </ns0:CI_Date>
+                           </ns0:date>
+                        </ns0:CI_Citation>
+                     </ns0:specification>
+                     <ns0:explanation>
+                        <ns2:CharacterString>See the referenced specification</ns2:CharacterString>
+                     </ns0:explanation>
+                     <ns0:pass ns2:nilReason="unknown" />
+                  </ns0:DQ_ConformanceResult>
+               </ns0:result>
+            </ns0:DQ_DomainConsistency>
+         </ns0:report>
+         <ns0:lineage>
+            <ns0:LI_Lineage>
+               <ns0:statement>
+                  <ns2:CharacterString>Computer assisted visual interpretation of the status 2018 data compared to the LC/LU product for reference year 2012. The main datasets for visual image interpretation were the DWH_MG2b_CORE_03 dataset (Optical VHR2 coverage over EU 2011-2013 and Riparian zones), mainly consisting of 1.5m VHR2 SPOT-6 and 2.5m VHR2 SPOT-5 HRG and 2m Pleiades satellite data for the 2012 reference year and VHR_IMAGE_2018 dataset (Optical VHR coverage of EEA-39 2017-2019), consisting of 2m Pleiades, Kompsat 3/3A, SuperView-1 and 4m SPOT-6/7, TripleSat, PlanetScope and Deimos satellite data for the 2018 reference year. Subsequently, intersection of classification results with additional data (Urban Atlas 2012/2018) was performed. The current LC/LU change layer differentiates 55 thematic LC/LU classes covering Strahler levels 2 to 9 storing the changes that happened between the two reference years. Positional Accuracy: less than 5 m (according to geo-location accuracy of satellite imagery delivered by ESA: less than 5m RMSE). Thematic accuracy (area-corrected Overall Accuracy, internal validation): 98.97% (at CODE_1 level) for change layer 2012-2018. Accuracy Assessment approach: Stratified Random Point Sampling with 1669 sampling points. Interpretation of sampling points has been performed on the best available reference data.</ns2:CharacterString>
+               </ns0:statement>
+            </ns0:LI_Lineage>
+         </ns0:lineage>
+      </ns0:DQ_DataQuality>
+  </ns0:dataQualityInfo>
+  <ns0:metadataMaintenance>
+      <ns0:MD_MaintenanceInformation>
+         <ns0:maintenanceAndUpdateFrequency>
+            <ns0:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="" />
+         </ns0:maintenanceAndUpdateFrequency>
+      </ns0:MD_MaintenanceInformation>
+  </ns0:metadataMaintenance>
+</ns0:MD_Metadata>
