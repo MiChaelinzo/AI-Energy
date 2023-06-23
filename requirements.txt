@@ -1,0 +1,9 @@
+pandas 
+geopandas 
+rasterio 
+scikit-learn 
+xarray 
+hda
+tensorflow 
+keras
+matplotlib 
