@@ -1,0 +1,16 @@
+from pathlib import Path
+
+hdarc = Path(Path.home()/'.hdarc')
+if not hdarc.is_file():
+    import getpass
+    USERNAME = input('Enter your username: ')
+    PASSWORD = getpass.getpass('Enter your password: ')
+
+    with open(Path.home()/'.hdarc', 'w') as f:
+        f.write('url: https://wekeo-broker.apps.mercator.dpi.wekeo.eu/databroker\n')
+        f.write(f'user: {USERNAME}\n')
+        f.write(f'password:{PASSWORD}\n')
+else:
+    print('Configuration file already exists.')
+    
+hda_client = Client()
