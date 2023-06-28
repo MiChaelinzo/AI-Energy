@@ -3,23 +3,27 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 import geopandas as gpd
+import rasterio
 
 # Load satellite data using WEkEO data/service
-wind_farm_data = gpd.read_file('wind_farm_data.geojson')  # Replace 'wind_farm_data.geojson' with the actual wind farm data file
-bird_migration_data = gpd.read_file('bird_migration_data.geojson')  # Replace 'bird_migration_data.geojson' with the actual bird migration data file
-solar_panel_data = gpd.read_file('solar_panel_data.geojson')  # Replace 'solar_panel_data.geojson' with the actual solar panel data file
+wind_farm_data = gpd.read_file('historical-mean-v0.0.geojson')  # Replace 'wind_farm_data.geojson' with the actual wind farm data file
+bird_migration_data = gpd.read_file('FWS_Migratory_Bird_US_Joint_Ventures_Boundaries_.geojson')  # Replace 'bird_migration_data.geojson' with the actual bird migration data file
+solar_panel_data = gpd.read_file('Solar_Resources.geojson')  # Replace 'solar_panel_data.geojson' with the actual solar panel data file
 
 # Perform analysis on wind farms and bird migration patterns
 # ...
 
 # Example analysis: Assess proximity of wind farms to bird migration routes
 def assess_proximity(wind_farm_data, bird_migration_data):
-    # Perform spatial join to determine which bird migration routes intersect with wind farms
-    bird_migration_intersect = gpd.sjoin(bird_migration_data, wind_farm_data, op='intersects')
 
+
+    wind_farm_data = wind_farm_data.to_crs("EPSG:4326")
+    
+    # Perform spatial join to determine which bird migration routes intersect with wind farms
+    bird_migration_intersect = gpd.sjoin(bird_migration_data, wind_farm_data, predicate='intersects')
     # Calculate the distance between bird migration routes and wind farms
     bird_migration_intersect['distance'] = bird_migration_intersect.geometry.distance(bird_migration_intersect.geometry)
-
+    bird_migration_intersect = bird_migration_intersect.to_crs("EPSG:3857")
     # Identify bird migration routes that are in close proximity to wind farms
     close_routes = bird_migration_intersect[bird_migration_intersect['distance'] < 1000]  # Adjust the threshold as needed
 
@@ -32,11 +36,22 @@ assess_proximity(wind_farm_data, bird_migration_data)
 
 # Perform analysis on solar panels and local ecosystems
 # ...
+# Assuming the "USGSEsriTNCWorldTerrestrialEcosystems2020.mpkx" file is in the same directory as your script
+
+
+# Assuming the TIF file is in the same directory as your script
+local_ecosystem_data = rasterio.open('WorldEcosystem.tif')
+
+# Read the raster data as a numpy array
+local_ecosystem_array = local_ecosystem_data.read(1)
+
+# Convert the numpy array to a GeoDataFrame
+local_ecosystem_gdf = gpd.GeoDataFrame({'value': local_ecosystem_array.flatten()}, geometry=gpd.points_from_xy(*local_ecosystem_data.xy))
 
 # Example analysis: Identify areas of high solar panel density in sensitive ecosystems
-def identify_sensitive_areas(solar_panel_data, local_ecosystem_data):
+def identify_sensitive_areas(solar_panel_data, local_ecosystem_gdf):
     # Perform spatial join to determine which local ecosystems intersect with solar panels
-    ecosystems_intersect = gpd.sjoin(local_ecosystem_data, solar_panel_data, op='intersects')
+    ecosystems_intersect = gpd.sjoin(local_ecosystem_gdf, solar_panel_data, predicate='intersects')
 
     # Calculate the solar panel density within each ecosystem
     ecosystems_intersect['density'] = ecosystems_intersect.groupby('ecosystem_id')['solar_panel_id'].transform('count')
