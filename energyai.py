@@ -18,12 +18,12 @@ def assess_proximity(wind_farm_data, bird_migration_data):
 
 
     wind_farm_data = wind_farm_data.to_crs("EPSG:4326")
-    
+    bird_migration_intersect = bird_migration_intersect.to_crs("EPSG:3857")
+
     # Perform spatial join to determine which bird migration routes intersect with wind farms
     bird_migration_intersect = gpd.sjoin(bird_migration_data, wind_farm_data, predicate='intersects')
     # Calculate the distance between bird migration routes and wind farms
     bird_migration_intersect['distance'] = bird_migration_intersect.geometry.distance(bird_migration_intersect.geometry)
-    bird_migration_intersect = bird_migration_intersect.to_crs("EPSG:3857")
     # Identify bird migration routes that are in close proximity to wind farms
     close_routes = bird_migration_intersect[bird_migration_intersect['distance'] < 1000]  # Adjust the threshold as needed
 
